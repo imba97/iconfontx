@@ -1,0 +1,33 @@
+{
+  "name": "simple-iconfont-builder",
+  "version": "1.0.0",
+  "description": "将字体、样式混合，生成 iconfont.css",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/imba97/iconfont-builder.git"
+  },
+  "keywords": [
+    "iconfont"
+  ],
+  "author": "imba97",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imba97/iconfont-builder/issues"
+  },
+  "homepage": "https://github.com/imba97/iconfont-builder#readme",
+  "devDependencies": {
+    "@types/mime-types": "^2.1.1",
+    "@types/node": "^16.11.6",
+    "axios": "^0.24.0",
+    "mime-types": "^2.1.33",
+    "postcss": "^8.3.11",
+    "postcss-csso": "^5.0.1",
+    "typescript": "^4.4.4"
+  }
+}
