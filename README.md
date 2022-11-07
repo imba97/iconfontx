@@ -4,12 +4,12 @@
 
 功能：
 
-- 字体文件转`base64`
-- 压缩`CSS`样式
+- 字体文件转 `base64`
+- 压缩 `CSS` 样式
 
-`iconfont`提供的链接是网络请求、加载字体也是网络请求，难免会慢
+`iconfont` 提供的链接是网络请求、加载字体也是网络请求，难免会慢
 
-如果想放在本地，每次更新`icon`都要把本地的样式、字体都更新，难免会麻烦
+如果想放在本地，每次更新 `icon` 都要把本地的样式、字体都更新，难免会麻烦
 
 这个程序可以一键解决
 
@@ -30,12 +30,13 @@ import IconfontBuilder from 'simple-iconfont-builder'
 IconfontBuilder.build(path.resolve(__dirname, 'iconfont.css'))
 ```
 
-2. 有两种方式，直接使用和设置一个命令
+2. 有两种方式，直接执行和设置一个命令
 
 直接执行：`node src/dev/iconfont.js //at.alicdn.com/t/font_2872455_oozagbwlhf.css`
+
 设置命令：
 
-在`package.json`的`scripts`添加一条
+在 `package.json` 的 `scripts` 添加一条
 
 ```json
 {
@@ -45,11 +46,11 @@ IconfontBuilder.build(path.resolve(__dirname, 'iconfont.css'))
 }
 ```
 
-使用时执行`npm run if //at.alicdn.com/t/font_2872455_oozagbwlhf.css`
+使用时执行 `npm run if //at.alicdn.com/t/font_2872455_oozagbwlhf.css`
 
-`IconfontBuilder.build()` 传入一个路径（可选），会自动将生成的`CSS`写入
+`IconfontBuilder.build()` 传入一个路径（可选），会自动将生成的 `CSS` 写入
 
-返回值是`Promise<IconfontBuilderResult>`
+返回值是 `Promise<IconfontBuilderResult>`
 
 ```typescript
 interface IconfontBuilderResult {
