@@ -26,8 +26,7 @@ export default class IconfontBuilder {
       .get(`https:${process.argv[2]}`)
       .then((res) => res.data)
     // 找到字体引入 拿到链接
-    const reg =
-      /url\('(\/\/at\.alicdn\.com\/t\/font_[a-z0-9_]+\.woff)\?t=\d+'\) format\('woff'\)/
+    const reg = /url\('((?:.*?).woff)\?t=\d+'\) format\('woff'\)/
     const regData = reg.exec(cssContent)
     if (!regData) {
       console.log('读取字体链接失败')
