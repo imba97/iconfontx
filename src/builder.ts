@@ -12,7 +12,7 @@ export async function build(url: string, options: CliOptions) {
   // 文件夹是否存在
   if (!fs.existsSync(dirpath)) {
     log.error('The output folder does not exist')
-    return
+    process.exit(0)
   }
 
   const content = await getClassFile(url)
