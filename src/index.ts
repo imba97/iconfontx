@@ -1,3 +1,3 @@
-import IconfontBuilder from './IconfontBuilder'
+export * from './types'
 
-export = IconfontBuilder
+export { build } from './builder'

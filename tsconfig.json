@@ -1,17 +1,19 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "noImplicitAny": true,
-    "moduleResolution": "node",
-    "outDir": "./dist",
-    "declaration": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "esModuleInterop": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "moduleDetection": "force",
+    "rootDir": ".",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  }
 }
