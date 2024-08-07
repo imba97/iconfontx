@@ -9,7 +9,7 @@
   "homepage": "https://github.com/imba97/iconfontx#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/imba97/iconfontx"
+    "url": "git+ssh://git@github.com/imba97/iconfontx"
   },
   "bugs": {
     "url": "https://github.com/imba97/iconfontx/issues"
