@@ -17,6 +17,11 @@ export async function build(url: string, options: CliOptions) {
 
   const content = await getClassFile(url)
 
+  if (!content) {
+    log.error('Plase check the iconfont css url')
+    process.exit(0)
+  }
+
   const fontBase64 = await generateFontBase64(content)
 
   // 检查是否生成成功
