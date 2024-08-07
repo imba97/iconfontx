@@ -30,5 +30,4 @@ if (!url || typeof url !== 'string') {
 }
 
 build(url, options as CliOptions)
-
-log.success('Build success ✨')
+  .then(() => log.success('Build success ✨'))
