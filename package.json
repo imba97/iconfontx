@@ -1,7 +1,7 @@
 {
   "name": "iconfontx",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "packageManager": "pnpm@9.6.0",
   "description": "package and compress iconfont styles and fonts into a single CSS file for local use",
   "author": "imba97",
