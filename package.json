@@ -39,7 +39,7 @@
     "picocolors": "^1.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.24.1",
+    "@imba97/eslint-config": "^0.0.1",
     "@types/csso": "^5.0.4",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.1.0",

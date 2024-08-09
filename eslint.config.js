@@ -1,9 +1,8 @@
-import antfu from '@antfu/eslint-config'
+import createConfig from '@imba97/eslint-config'
 
-export default antfu({
+export default createConfig({
   rules: {
     'no-console': 'off',
-    'node/prefer-global/process': 'off',
-    'style/comma-dangle': ['error', 'never']
+    'node/prefer-global/process': 'off'
   }
 })
