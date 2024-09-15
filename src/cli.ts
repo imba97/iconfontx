@@ -17,6 +17,10 @@ cli
 
 const { args, options } = cli.parse()
 
+if(options.h || options.help) {
+  process.exit(0)
+}
+
 if (options.v || options.version) {
   console.log(pkgJson.version)
   process.exit(0)
